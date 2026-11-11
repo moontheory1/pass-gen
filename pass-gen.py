@@ -117,9 +117,9 @@ def print_main_screen():
     print(MAIN_LOGO)
     vault_count = len(load_vault_raw())
     vault_badge = f"{GREEN_SOFT}{vault_count} locked{RESET}" if vault_count else f"{GRAY}empty{RESET}"
-    print(f" {GRAY}┌────────────────────────────────────────────────────────────────────────────────┐{RESET}")
+    print(f" {GRAY}┌──────────────────────────────────────────────────────────────┐{RESET}")
     print(f" {GRAY}│{RESET}  {CYAN_SOFT}✦ SECURITY SUITE ✦{RESET}   |   Vault: {vault_badge}   |   {WATERMARK}  {GRAY}│{RESET}")
-    print(f" {GRAY}└────────────────────────────────────────────────────────────────────────────────┘{RESET}\n")
+    print(f" {GRAY}└──────────────────────────────────────────────────────────────┘{RESET}\n")
 
 
 def prompt_bool(message, default=True):
